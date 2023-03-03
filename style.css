@@ -127,7 +127,11 @@ nav div a:hover {
     transform: scale(1.05);
     transition: 50ms;
 }
-
+@media screen and (max-width: 1440px) {
+    section:nth-child(1) {
+        background: url(images/bg.png) no-repeat center center fixed;
+    }
+}
 @media screen and (max-width: 394px) {
     a {
         font-size: 12px;
