@@ -132,4 +132,7 @@ nav div a:hover {
     a {
         font-size: 4px;
     }
+    h1 {
+        font-size: 2rem;
+    }
 }
