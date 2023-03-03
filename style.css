@@ -128,7 +128,7 @@ nav div a:hover {
     transition: 50ms;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 394px) {
     a {
         font-size: 12px;
     }
