@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Raleway:wght@500&display=swap');
+
+:root {
+    --graywall: #333333;
+    --white: #ffffff;
+    --sage-green: #6da37f;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background: var(--sage-green);
+    color: var(--white);
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    user-select: none;
+    color: var(--white);
+    text-shadow: 0px 6px 8px #00000050;
+}
+a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+ul, a, li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+}
+section:nth-child(1) {
+    background-color: #000000;
+    background: url(images/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(2) {
+    background-color: #ffffff;
+}
+section:nth-child(3) {
+    background-color: #333333;
+}
+
+nav {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul, nav a, nav li {
+    float: left;
+}
+nav ul li a {
+    color: var(--white);
+    padding: 15px 20px;
+}
+nav ul li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width 200ms ease-out, background-color 400ms ease;
+}
+nav ul li a:hover:after {
+    width: 80%;
+    background: var(--white);
+}
+nav div {
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+nav div a {
+    color: var(--white);
+    padding: 7px 8px 2px 7px;
+    border-radius: 50%;
+    transition: 100ms;
+}
+nav div a:hover {
+    background-color: var(--hover);
+    transition: 50ms;
+}
+.navigationButton {
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.navigationButton button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 4px 2px 0px 2px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: 100ms;
+    z-index: 10;
+}
+.navigationButton button:hover {
+    background-color: var(--sage-green);
+    transform: scale(1.05);
+    transition: 50ms;
+}
