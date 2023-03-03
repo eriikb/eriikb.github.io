@@ -140,7 +140,7 @@ nav div a:hover {
         font-size: 2rem;
     }
     section:nth-child(1) {
-    background: url(images/phonebg.png) no-repeat center center fixed;
+        background: url(images/phone.png) no-repeat center center fixed;
 }
     
 }
