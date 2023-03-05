@@ -55,7 +55,7 @@ section:nth-child(1) {
     align-items: center;
 }
 nav {
-    width: 100vw;
+    width: 95vw;
     position: absolute;
     top: 0;
     display: flex;
